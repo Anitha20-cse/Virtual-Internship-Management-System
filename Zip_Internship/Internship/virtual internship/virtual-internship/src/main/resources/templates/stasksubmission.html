@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Submission - VIMS</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Task</h1>
+        <form action="/student/submit-task" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="studentInternshipId">Internship Registration ID:</label>
+                <input type="number" id="studentInternshipId" name="studentInternshipId" required />
+            </div>
+            <div class="form-group">
+                <label for="fileName">File Name (path):</label>
+                <input type="text" id="fileName" name="fileName" required />
+            </div>
+            <button type="submit" class="btn">Submit Task</button>
+        </form>
+        <a href="/student/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>
